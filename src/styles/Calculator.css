@@ -63,15 +63,42 @@
   grid-row: span 2;
 }
 
-/* Responsive styles */
+/* Responsive styles for iPhone */
 @media (max-width: 600px) {
   .Calculator {
     width: 90%;
+    height: 100%;
     padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  .Calculator button {
-    font-size: 1em;
-    padding: 8px;
+  /* .calculator {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: minmax(70px, 70px) repeat(5, 1fr);
+    gap: 5px;
   }
+
+  .display {
+    font-size: 2rem;
+    padding: 15px;
+  }
+
+  .button {
+    font-size: 1.2rem;
+    padding: 15px;
+  }
+
+  .button.double {
+    grid-column: span 2;
+  }
+
+  .button.plus {
+    grid-row: span 2;
+  }
+
+  .button.equals {
+    grid-row: span 2;
+  } */
 }
