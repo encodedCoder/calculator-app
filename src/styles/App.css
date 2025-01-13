@@ -1,0 +1,89 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  font-family: "Arial", sans-serif;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  width: 420px;
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: minmax(90px, 90px) repeat(5, 1fr);
+  gap: 10px;
+}
+
+.display {
+  grid-column: span 4;
+  background-color: #222;
+  color: #fff;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.button {
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  padding: 20px;
+}
+
+.button:hover {
+  background-color: #d0d0d0;
+}
+
+.button:active {
+  background-color: #004085;
+}
+
+.button.operator {
+  background-color: #ff9500;
+  color: #fff;
+}
+
+.button.operator:hover {
+  background-color: #e08e00;
+}
+
+.button.double {
+  grid-column: span 2;
+}
+
+.button.plus {
+  grid-row: span 2;
+}
+
+.button.equals {
+  grid-row: span 2;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #666;
+}
